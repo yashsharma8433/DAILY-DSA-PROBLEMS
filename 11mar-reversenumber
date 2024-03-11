@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in); //This creates a new Scanner object, which is used to obtain input from the user.
+		int n= sc.nextInt(); //This method of the Scanner class reads the next integer entered by the user. The entered value is then stored in the variable n
+		int digit; //declare digit
+		int reverse=0; //initialize reverse from 0
+		while(n>0){ //if n greater then 0 thrn execute only
+			digit = n%10;// Extracts the last digit of the number
+			reverse = reverse*10+ digit; // Builds the reversed number
+
+			 n = n/10;  // Removes the last digit from the original number
+
+		}
+
+         System.out.println(reverse);
+
+	}
+}
